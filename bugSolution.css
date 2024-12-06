@@ -1,0 +1,9 @@
+/* Correct way to use calc() with mixed units and precedence */
+#container {
+  width: calc( (50% - 10px) + 20% ); /*Use parentheses to explicitly define the order of operations*/
+}
+
+/*Avoid mixing units for better predictability*/
+#element {
+  width: calc(50% - 20px); /*Use the same unit type throughout*/
+}
